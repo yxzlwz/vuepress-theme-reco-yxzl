@@ -21,7 +21,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://packages.aliyun.com/61f09f9573741507cb7cf447/npm/npm-registry/"
   },
   "repository": {
     "type": "git",
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@giscus/vue": "^2.2.8",
-    "@vuepress-reco/tailwindcss-config": "workspace:*",
+    "@vuepress-reco/tailwindcss-config": "2.0.0-beta.63",
     "@vuepress/client": "2.0.0-beta.62",
     "@vuepress/core": "2.0.0-beta.62",
     "@vuepress/plugin-theme-data": "2.0.0-beta.62",
