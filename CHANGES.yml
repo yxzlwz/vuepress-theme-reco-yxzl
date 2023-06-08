@@ -1,0 +1,4 @@
+theme-reco:
+  - index.build.html 删除prefetch
+  - index.dev.html lang 标签
+  - 使用 antd 替换 carbon

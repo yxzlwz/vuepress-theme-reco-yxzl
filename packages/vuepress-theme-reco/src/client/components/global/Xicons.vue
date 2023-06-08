@@ -1,39 +1,32 @@
 <template>
   <span
-    v-if="link !=='javascript:void(0)' || (text || slots.default)"
+    v-if="link !== 'javascript:void(0)' || text || slots.default"
     :class="['xicon-container', iconPosition]"
     @click="handleClick"
   >
     <slot name="icon">
-      <component
-        class="xicon-icon"
-        :style="iconStyle"
-        :is="icons[icon]"
-      />
+      <component class="xicon-icon" :style="iconStyle" :is="icons[icon]" />
     </slot>
 
-    <span
-      class="xicon-content"
-      v-if="text || slots.default"
-      :style="textStyle"
-    >
+    <span class="xicon-content" v-if="text || slots.default" :style="textStyle">
       <slot>{{ text }}</slot>
     </span>
   </span>
 
   <span v-else class="xicon-container">
-    <component
-      :style="iconStyle"
-      :is="icons[icon]"
-      @click="emits('click')"
-    />
+    <component :style="iconStyle" :is="icons[icon]" @click="emits('click')" />
   </span>
-
 </template>
 
 <script lang="ts" setup>
 import { computed, toRefs, useSlots } from 'vue'
-import * as icons from '@vicons/carbon'
+import * as icons_carbon from '@vicons/carbon'
+import * as icons_antd from '@vicons/antd'
+
+const icons = {
+  ...icons_carbon,
+  ...icons_antd,
+}
 
 const slots = useSlots()
 
@@ -48,7 +41,7 @@ const props = defineProps({
   },
   iconSize: {
     type: [String, Number],
-    default: 18,
+    default: 20,
   },
   color: {
     type: String,
@@ -81,7 +74,7 @@ const iconStyle = computed(() => {
     width: `${iconSize.value}px`,
     height: `${iconSize.value}px`,
     fontSize: `${iconSize.value}px`,
-    color: color.value
+    color: color.value,
   }
 
   return style

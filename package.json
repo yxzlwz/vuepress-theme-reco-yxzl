@@ -18,7 +18,7 @@
     "docs:deploy": "bash scripts/docs-deploy.sh",
     "docs:dev": "pnpm build:tsc --watch & pnpm build:copy --watch & vuepress dev docs",
     "example:build": "vuepress build example",
-    "example:dev": "DEBUG=vuepress* vuepress dev example",
+    "example:dev": "vuepress dev example",
     "lint": "eslint --ext .js,.ts,.vue .",
     "release": "pnpm build:all && bash scripts/release.sh",
     "release:pre": "pnpm build:all && bash scripts/pre-release.sh",
