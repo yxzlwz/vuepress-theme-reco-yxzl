@@ -25,8 +25,9 @@ import * as icons_carbon from '@vicons/carbon'
 import * as icons_material from '@vicons/material'
 
 const icons = {
-  ...icons_carbon,
   ...icons_antd,
+  ...icons_carbon,
+  ...icons_material,
 }
 
 const slots = useSlots()
