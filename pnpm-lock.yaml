@@ -268,9 +268,9 @@ importers:
       '@vicons/carbon':
         specifier: ^0.12.0
         version: registry.npmmirror.com/@vicons/carbon@0.12.0
-      '@vicons/fa':
+      '@vicons/material':
         specifier: ^0.12.0
-        version: registry.npmmirror.com/@vicons/fa@0.12.0
+        version: registry.npmmirror.com/@vicons/material@0.12.0
       '@vuepress-reco/shared':
         specifier: 2.0.0-beta.63
         version: link:../@vuepress-reco/shared
@@ -2953,9 +2953,9 @@ packages:
     version: 0.12.0
     dev: false
 
-  registry.npmmirror.com/@vicons/fa@0.12.0:
-    resolution: {integrity: sha512-g2PIeJLsTHUjt6bK63LxqC0uYQB7iu+xViJOxvp1s8b9/akpXVPVWjDTTsP980/0KYyMMe4U7F/aUo7wY+MsXA==, registry: https://packages.aliyun.com/61f09f9573741507cb7cf447/npm/npm-registry/, tarball: https://registry.npmmirror.com/@vicons/fa/-/fa-0.12.0.tgz}
-    name: '@vicons/fa'
+  registry.npmmirror.com/@vicons/material@0.12.0:
+    resolution: {integrity: sha512-chv1CYAl8P32P3Ycwgd5+vw/OFNc2mtkKdb1Rw4T5IJmKy6GVDsoUKV3N2l208HATn7CCQphZtuPDdsm7K2kmA==, registry: https://packages.aliyun.com/61f09f9573741507cb7cf447/npm/npm-registry/, tarball: https://registry.npmmirror.com/@vicons/material/-/material-0.12.0.tgz}
+    name: '@vicons/material'
     version: 0.12.0
     dev: false
 

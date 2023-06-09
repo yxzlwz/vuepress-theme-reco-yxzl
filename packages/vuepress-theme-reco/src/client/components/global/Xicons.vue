@@ -20,8 +20,9 @@
 
 <script lang="ts" setup>
 import { computed, toRefs, useSlots } from 'vue'
-import * as icons_carbon from '@vicons/carbon'
 import * as icons_antd from '@vicons/antd'
+import * as icons_carbon from '@vicons/carbon'
+import * as icons_material from '@vicons/material'
 
 const icons = {
   ...icons_carbon,
