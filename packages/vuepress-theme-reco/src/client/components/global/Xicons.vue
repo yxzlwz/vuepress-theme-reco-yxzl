@@ -20,14 +20,12 @@
 
 <script lang="ts" setup>
 import { computed, toRefs, useSlots } from 'vue'
-import * as icons_antd from '@vicons/antd'
 import * as icons_carbon from '@vicons/carbon'
-import * as icons_material from '@vicons/material'
+import * as icons_fa from '@vicons/fa'
 
 const icons = {
-  ...icons_antd,
   ...icons_carbon,
-  ...icons_material,
+  ...icons_fa,
 }
 
 const slots = useSlots()
@@ -43,7 +41,7 @@ const props = defineProps({
   },
   iconSize: {
     type: [String, Number],
-    default: 20,
+    default: 18,
   },
   color: {
     type: String,
